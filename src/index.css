@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fdf6f0;
+  font-family: 'Lato', sans-serif;
+  color: #3d2b2b;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fdf6f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #e8b4b8;
+  border-radius: 3px;
+}
+
+/* Ensure section IDs have scroll offset for fixed navbar */
+section {
+  scroll-margin-top: 64px;
+}
