@@ -40,7 +40,7 @@ export default function RSVP() {
         <h2 className="font-serif text-4xl md:text-5xl text-rose-800">Conferma la Presenza</h2>
         <div className="w-16 h-px bg-rose-300 mx-auto mt-4" />
         <p className="font-sans text-gray-500 mt-4 text-sm">
-          Vi preghiamo di confermare la presenza entro il <strong>1 Maggio 2026</strong>.
+          Gradita conferma entro il <strong>30 Luglio 2026</strong>.
         </p>
       </motion.div>
 
@@ -197,7 +197,7 @@ export default function RSVP() {
             <p className="font-sans text-gray-500">
               Non vediamo l&apos;ora di festeggiare con te questo momento meraviglioso.
             </p>
-            <p className="font-serif italic text-rose-400 mt-4 text-lg">Con amore, Sofia &amp; Marco 💍</p>
+            <p className="font-serif italic text-rose-400 mt-4 text-lg">Con amore, Sabiana &amp; Roberto 💍</p>
           </motion.div>
         )}
       </AnimatePresence>

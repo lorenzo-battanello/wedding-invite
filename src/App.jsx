@@ -38,7 +38,7 @@ export default function App() {
             className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-rose-100"
           >
             <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
-              <span className="font-serif text-rose-800 text-xl tracking-wider">Sofia &amp; Marco</span>
+              <span className="font-serif text-rose-800 text-xl tracking-wider">Sabiana &amp; Roberto</span>
               <ul className="hidden md:flex gap-8">
                 {navLinks.map(link => (
                   <li key={link.href}>

@@ -44,24 +44,33 @@ export default function Details() {
         <div className="w-16 h-px bg-rose-300 mx-auto mt-4" />
       </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
         <DetailCard
-          icon="⛪"
-          title="Cerimonia"
+          icon="🚙"
+          title="Arrivo"
           time="11:00"
-          place="Chiesa di San Marco"
-          address="Piazza San Marco, Venezia"
+          place="Villa Ronchi"
+          address="Corso Pavia 164, Vigevano (PV)"
           direction="left"
           index={0}
         />
         <DetailCard
-          icon="🥂"
-          title="Ricevimento"
-          time="19:00"
-          place="Villa Contarini"
-          address="Via Doge Alvise Contarini, Mira (VE)"
+          icon="💍"
+          title="Rito Civile"
+          time="11:30"
+          place="Villa Ronchi"
+          address="Corso Pavia 164, Vigevano (PV)"
           direction="right"
           index={1}
+        />
+        <DetailCard
+          icon="🥂"
+          title="Ricevimento"
+          time="13:00"
+          place="Villa Ronchi"
+          address="Corso Pavia 164, Vigevano (PV)"
+          direction="right"
+          index={2}
         />
       </div>
 

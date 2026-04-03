@@ -1,4 +1,4 @@
-# 💍 Sofia & Marco — Partecipazione Matrimonio
+# 💍 Sabiana & Roberto — Partecipazione Matrimonio
 
 Sito statico SPA elegante per partecipazioni di matrimonio, costruito con **Vite + React**, **Framer Motion** e **Tailwind CSS**.
 
@@ -7,7 +7,7 @@ Sito statico SPA elegante per partecipazioni di matrimonio, costruito con **Vite
 ## ✨ Funzionalità
 
 - **Hero** a schermo intero con nomi, data, parallax e petali animati
-- **Conto alla rovescia** live fino al 14 Giugno 2026
+- **Conto alla rovescia** live fino al 26 Settembre 2026
 - **Dettagli** cerimonia e ricevimento con animazioni on-scroll
 - **Galleria** fotografica con hover overlay
 - **RSVP** form con animazione di conferma
@@ -104,4 +104,4 @@ wedding-invite/
 
 ---
 
-*Con amore, Sofia & Marco 💍*
+*Con amore, Sabiana & Roberto 💍*

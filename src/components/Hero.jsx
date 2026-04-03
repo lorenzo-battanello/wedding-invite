@@ -89,7 +89,7 @@ export default function Hero() {
           transition={{ duration: 1.2, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="font-serif text-7xl md:text-8xl lg:text-9xl text-rose-800 tracking-tight leading-none"
         >
-          Sofia &amp; Marco
+          Sabiana &amp; Roberto
         </motion.h1>
 
         {/* Divider */}
@@ -107,7 +107,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 1.2 }}
           className="font-sans text-rose-400 tracking-[0.5em] uppercase text-sm md:text-base"
         >
-          14 Giugno 2026
+          26 Settembre 2026
         </motion.p>
 
         {/* Location */}
@@ -117,7 +117,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 1.5 }}
           className="font-serif italic text-rose-600 text-lg md:text-xl mt-3"
         >
-          Venezia, Italia
+          Vigevano, Italia
         </motion.p>
       </motion.div>
 

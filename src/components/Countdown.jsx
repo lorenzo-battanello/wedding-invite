@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
-const WEDDING_DATE = new Date('2026-06-14T11:00:00')
+const WEDDING_DATE = new Date('2026-09-26T11:00:00')
 
 function getTimeLeft() {
   const now = new Date()

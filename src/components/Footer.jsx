@@ -34,7 +34,7 @@ export default function Footer() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="font-serif text-4xl text-rose-800 mb-3"
         >
-          Sofia &amp; Marco
+          Sabiana &amp; Roberto
         </motion.h2>
 
         {/* Date */}
@@ -44,7 +44,7 @@ export default function Footer() {
           transition={{ duration: 0.8, delay: 0.45 }}
           className="font-sans text-rose-400 tracking-[0.4em] uppercase text-xs mb-6"
         >
-          14 Giugno 2026 — Venezia
+          26 Settembre 2026 — Vigevano
         </motion.p>
 
         {/* Romantic phrase */}
@@ -63,7 +63,7 @@ export default function Footer() {
           transition={{ duration: 0.8, delay: 0.75 }}
           className="font-sans text-rose-300 text-sm mt-3 tracking-wide"
         >
-          Con amore, Sofia &amp; Marco
+          Con amore, Sabiana &amp; Roberto
         </motion.p>
 
         {/* Bottom ornament */}
