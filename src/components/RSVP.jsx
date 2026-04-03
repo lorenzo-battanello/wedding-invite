@@ -22,8 +22,14 @@ export default function RSVP() {
     setForm(prev => ({ ...prev, [name]: type === 'checkbox' ? checked : value }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+    const data = new URLSearchParams(new FormData(e.target)).toString()
+    await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: data,
+    })
     setSent(true)
   }
 
@@ -48,6 +54,9 @@ export default function RSVP() {
         {!sent ? (
           <motion.form
             key="form"
+            name="rsvp"
+            method="POST"
+            data-netlify="true"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20, scale: 0.97 }}
@@ -55,6 +64,7 @@ export default function RSVP() {
             onSubmit={handleSubmit}
             className="max-w-lg mx-auto space-y-4"
           >
+            <input type="hidden" name="form-name" value="rsvp" />
             {/* Name */}
             <div>
               <label className="block font-sans text-rose-700 text-xs tracking-widest uppercase mb-1">
@@ -62,7 +72,7 @@ export default function RSVP() {
               </label>
               <input
                 required
-                name="name"
+                name="nome"
                 value={form.name}
                 onChange={handleChange}
                 placeholder="Es. Maria Rossi"
@@ -92,7 +102,7 @@ export default function RSVP() {
                 Presenza *
               </label>
               <select
-                name="attendance"
+                name="presenza"
                 value={form.attendance}
                 onChange={handleChange}
                 className={inputClass}
@@ -108,7 +118,7 @@ export default function RSVP() {
                 Numero di Accompagnatori
               </label>
               <select
-                name="guests"
+                name="accompagnatori"
                 value={form.guests}
                 onChange={handleChange}
                 className={inputClass}
@@ -125,7 +135,7 @@ export default function RSVP() {
                 Note / Allergie Alimentari
               </label>
               <textarea
-                name="notes"
+                name="note"
                 value={form.notes}
                 onChange={handleChange}
                 placeholder="Allergie, intolleranze o altre comunicazioni..."
@@ -139,7 +149,7 @@ export default function RSVP() {
               <div className="relative">
                 <input
                   type="checkbox"
-                  name="vegetarian"
+                  name="vegetariano"
                   checked={form.vegetarian}
                   onChange={handleChange}
                   className="sr-only"

@@ -11,7 +11,7 @@ const navLinks = [
   { label: 'Il Giorno', href: '#details' },
   { label: 'Conto alla Rovescia', href: '#countdown' },
   { label: 'Galleria', href: '#gallery' },
-  { label: 'RSVP', href: '#rsvp' },
+  { label: 'Conferma Presenza', href: '#rsvp' },
 ]
 
 export default function App() {

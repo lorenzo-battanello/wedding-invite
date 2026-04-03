@@ -13,6 +13,15 @@
     />
   </head>
   <body>
+    <form name="rsvp" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="rsvp" />
+      <input name="nome" />
+      <input name="email" />
+      <select name="presenza"></select>
+      <select name="accompagnatori"></select>
+      <textarea name="note"></textarea>
+      <input type="checkbox" name="vegetariano" />
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
