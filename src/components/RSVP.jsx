@@ -7,12 +7,12 @@ const inputClass =
 export default function RSVP() {
   const [sent, setSent] = useState(false)
   const [form, setForm] = useState({
-    name: '',
+    nome: '',
     email: '',
-    attendance: 'present',
-    guests: '0',
-    notes: '',
-    vegetarian: false,
+    presenza: 'present',
+    accompagnatori: '0',
+    note: '',
+    vegetariano: false,
   })
   const titleRef = useRef(null)
   const titleInView = useInView(titleRef, { once: true, margin: '-80px' })
@@ -73,7 +73,7 @@ export default function RSVP() {
               <input
                 required
                 name="nome"
-                value={form.name}
+                value={form.nome}
                 onChange={handleChange}
                 placeholder="Es. Maria Rossi"
                 className={inputClass}
@@ -103,7 +103,7 @@ export default function RSVP() {
               </label>
               <select
                 name="presenza"
-                value={form.attendance}
+                value={form.presenza}
                 onChange={handleChange}
                 className={inputClass}
               >
@@ -115,16 +115,16 @@ export default function RSVP() {
             {/* Guests */}
             <div>
               <label className="block font-sans text-rose-700 text-xs tracking-widest uppercase mb-1">
-                Numero di Accompagnatori
+                Numero di Persone
               </label>
               <select
                 name="accompagnatori"
-                value={form.guests}
+                value={form.accompagnatori}
                 onChange={handleChange}
                 className={inputClass}
               >
                 {[0, 1, 2, 3, 4, 5].map(n => (
-                  <option key={n} value={String(n)}>{n === 0 ? 'Solo/a' : `+${n} accompagnator${n === 1 ? 'e' : 'i'}`}</option>
+                  <option key={n} value={String(n)}>{n === 0 ? 'Solo/a' : `+${n} person${n === 1 ? 'a' : 'e'}`}</option>
                 ))}
               </select>
             </div>
@@ -132,13 +132,13 @@ export default function RSVP() {
             {/* Notes */}
             <div>
               <label className="block font-sans text-rose-700 text-xs tracking-widest uppercase mb-1">
-                Note / Allergie Alimentari
+                Note sui partecipanti e/o Allergie Alimentari
               </label>
               <textarea
                 name="note"
-                value={form.notes}
+                value={form.note}
                 onChange={handleChange}
-                placeholder="Allergie, intolleranze o altre comunicazioni..."
+                placeholder="Allergie, intolleranze o nomi partecipanti aggiuntivi..."
                 rows={3}
                 className={inputClass}
               />
@@ -150,15 +150,15 @@ export default function RSVP() {
                 <input
                   type="checkbox"
                   name="vegetariano"
-                  checked={form.vegetarian}
+                  checked={form.vegetariano}
                   onChange={handleChange}
                   className="sr-only"
                 />
                 <motion.div
-                  animate={{ backgroundColor: form.vegetarian ? '#e11d48' : '#fff' }}
+                  animate={{ backgroundColor: form.vegetariano ? '#e11d48' : '#fff' }}
                   className="w-5 h-5 border-2 border-rose-300 rounded flex items-center justify-center"
                 >
-                  {form.vegetarian && (
+                  {form.vegetariano && (
                     <motion.svg
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
