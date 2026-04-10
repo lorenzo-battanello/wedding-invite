@@ -22,6 +22,12 @@ function DetailCard({ icon, title, time, place, address, direction, index }) {
       <p className="font-sans text-rose-500 tracking-[0.2em] uppercase text-sm mb-1">Ore {time}</p>
       <p className="font-serif text-xl text-gray-700 mt-2">{place}</p>
       <p className="font-sans text-gray-400 text-sm mt-1">{address}</p>
+      <a href={`https://www.google.com/maps/place/Villa+Ronchi/@45.2852864,8.8897918,14z/data=!4m6!3m5!1s0x4786e22cee6650c9:0xa07d19efd690240c!8m2!3d45.2857373!4d8.9338927!16s%2Fg%2F1ptz3lzt8?entry=ttu&g_ep=EgoyMDI2MDQwNy4wIKXMDSoASAFQAw%3D%3D`} 
+        title='Indicazioni' target="_blank" rel="noopener noreferrer" 
+        className="mt-5 inline-flex items-center gap-1 text-rose-300 text-lg font-semibold hover:underline">
+        📍
+        Indicazioni
+      </a>
     </motion.div>
   )
 }
@@ -66,7 +72,7 @@ export default function Details() {
         <DetailCard
           icon="🥂"
           title="Ricevimento"
-          time="13:00"
+          time="13:30"
           place="Villa Ronchi"
           address="Corso Pavia 164, Vigevano (PV)"
           direction="right"

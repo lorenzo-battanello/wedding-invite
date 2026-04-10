@@ -34,7 +34,7 @@ export default function Footer() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="font-serif text-4xl text-rose-800 mb-3"
         >
-          Sabiana &amp; Roberto
+          Roberto &amp; Sabiana
         </motion.h2>
 
         {/* Date */}
@@ -63,7 +63,7 @@ export default function Footer() {
           transition={{ duration: 0.8, delay: 0.75 }}
           className="font-sans text-rose-300 text-sm mt-3 tracking-wide"
         >
-          Con amore, Sabiana &amp; Roberto
+          Con amore, Roberto &amp; Sabiana
         </motion.p>
 
         {/* Bottom ornament */}

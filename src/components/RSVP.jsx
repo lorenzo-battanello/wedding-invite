@@ -207,7 +207,7 @@ export default function RSVP() {
             <p className="font-sans text-gray-500">
               Non vediamo l&apos;ora di festeggiare con te questo momento meraviglioso.
             </p>
-            <p className="font-serif italic text-rose-400 mt-4 text-lg">Con amore, Sabiana &amp; Roberto 💍</p>
+            <p className="font-serif italic text-rose-400 mt-4 text-lg">Con amore, Roberto &amp; Sabiana 💍</p>
           </motion.div>
         )}
       </AnimatePresence>

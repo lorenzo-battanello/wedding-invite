@@ -79,7 +79,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="font-sans text-rose-400 tracking-[0.4em] uppercase text-xs mb-6"
         >
-          Vi invitano a celebrare
+          Invito per celebrare
         </motion.p>
 
         {/* Names */}
@@ -89,7 +89,7 @@ export default function Hero() {
           transition={{ duration: 1.2, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="font-serif text-7xl md:text-8xl lg:text-9xl text-rose-800 tracking-tight leading-none"
         >
-          Sabiana &amp; Roberto
+          Roberto &amp; Sabiana
         </motion.h1>
 
         {/* Divider */}

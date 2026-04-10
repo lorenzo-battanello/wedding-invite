@@ -1,4 +1,4 @@
-# 💍 Sabiana & Roberto — Partecipazione Matrimonio
+# 💍 Roberto & Sabiana — Partecipazione Matrimonio
 
 Sito statico SPA elegante per partecipazioni di matrimonio, costruito con **Vite + React**, **Framer Motion** e **Tailwind CSS**.
 
@@ -104,4 +104,4 @@ wedding-invite/
 
 ---
 
-*Con amore, Sabiana & Roberto 💍*
+*Con amore, Roberto & Sabiana 💍*
