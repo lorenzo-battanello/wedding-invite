@@ -26,7 +26,7 @@ export default function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-[#fdf6f0]">
+    <div className="min-h-screen bg-[#f5f7f3]">
       {/* Floating Navbar */}
       <AnimatePresence>
         {showNav && (
@@ -35,16 +35,16 @@ export default function App() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -80, opacity: 0 }}
             transition={{ duration: 0.4, ease: 'easeOut' }}
-            className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-rose-100"
+            className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-sage-100"
           >
             <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
-              <span className="font-serif text-rose-800 text-xl tracking-wider">Roberto &amp; Sabiana</span>
+              <span className="font-serif text-sage-800 text-xl tracking-wider">Roberto &amp; Sabiana</span>
               <ul className="hidden md:flex gap-8">
                 {navLinks.map(link => (
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      className="text-sm font-sans text-rose-600 tracking-widest uppercase hover:text-rose-800 transition-colors"
+                      className="text-sm font-sans text-sage-600 tracking-widest uppercase hover:text-sage-800 transition-colors"
                     >
                       {link.label}
                     </a>

@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: #fdf6f0;
+  background-color: #f5f7f3;
   font-family: 'Lato', sans-serif;
-  color: #3d2b2b;
+  color: #2a3d28;
 }
 
 /* Custom scrollbar */
@@ -17,10 +17,10 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #fdf6f0;
+  background: #f5f7f3;
 }
 ::-webkit-scrollbar-thumb {
-  background: #e8b4b8;
+  background: #a8b5a0;
   border-radius: 3px;
 }
 

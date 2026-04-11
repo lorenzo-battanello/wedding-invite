@@ -21,7 +21,7 @@ export default function Hero() {
     <section
       id="hero"
       ref={ref}
-      className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-[#fdf6f0]"
+      className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-[#f5f7f3]"
     >
       {/* Subtle radial gradient background */}
       <motion.div
@@ -29,7 +29,7 @@ export default function Hero() {
         className="absolute inset-0 bg-gradient-radial"
         aria-hidden="true"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#fde8e8_0%,_#fdf6f0_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#dde8d9_0%,_#f5f7f3_70%)]" />
       </motion.div>
 
       {/* Decorative floating petals */}
@@ -42,7 +42,7 @@ export default function Hero() {
             top: petal.y,
             width: petal.size,
             height: petal.size,
-            background: `radial-gradient(circle, #f9a8d4 0%, #fda4af 100%)`,
+            background: `radial-gradient(circle, #a8c5a0 0%, #8db886 100%)`,
           }}
           animate={{
             y: [0, -20, 0],
@@ -62,8 +62,8 @@ export default function Hero() {
       {/* Decorative thin horizontal lines */}
       <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 pointer-events-none" aria-hidden="true">
         <div className="max-w-2xl mx-auto px-8">
-          <div className="border-t border-rose-200 opacity-40 mb-2" />
-          <div className="border-t border-rose-200 opacity-20" />
+          <div className="border-t border-sage-200 opacity-40 mb-2" />
+          <div className="border-t border-sage-200 opacity-20" />
         </div>
       </div>
 
@@ -77,7 +77,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="font-sans text-rose-400 tracking-[0.4em] uppercase text-xs mb-6"
+          className="font-sans text-sage-400 tracking-[0.4em] uppercase text-xs mb-6"
         >
           Invito per celebrare
         </motion.p>
@@ -87,7 +87,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="font-serif text-7xl md:text-8xl lg:text-9xl text-rose-800 tracking-tight leading-none"
+          className="font-serif text-7xl md:text-8xl lg:text-9xl text-sage-800 tracking-tight leading-none"
         >
           Roberto &amp; Sabiana
         </motion.h1>
@@ -97,7 +97,7 @@ export default function Hero() {
           initial={{ scaleX: 0, opacity: 0 }}
           animate={{ scaleX: 1, opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className="w-48 h-px bg-rose-300 my-6"
+          className="w-48 h-px bg-sage-300 my-6"
         />
 
         {/* Date */}
@@ -105,7 +105,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="font-sans text-rose-400 tracking-[0.5em] uppercase text-sm md:text-base"
+          className="font-sans text-sage-400 tracking-[0.5em] uppercase text-sm md:text-base"
         >
           26 Settembre 2026
         </motion.p>
@@ -115,7 +115,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.5 }}
-          className="font-serif italic text-rose-600 text-lg md:text-xl mt-3"
+          className="font-serif italic text-sage-600 text-lg md:text-xl mt-3"
         >
           Vigevano, Italia
         </motion.p>
@@ -129,13 +129,13 @@ export default function Hero() {
         transition={{ delay: 2 }}
         onClick={() => document.getElementById('countdown')?.scrollIntoView({ behavior: 'smooth' })}
       >
-        <span className="font-sans text-rose-400 text-xs tracking-[0.3em] uppercase">Scorri</span>
+        <span className="font-sans text-sage-400 text-xs tracking-[0.3em] uppercase">Scorri</span>
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
-          className="w-5 h-8 rounded-full border-2 border-rose-300 flex items-start justify-center pt-1"
+          className="w-5 h-8 rounded-full border-2 border-sage-300 flex items-start justify-center pt-1"
         >
-          <div className="w-1 h-2 bg-rose-400 rounded-full" />
+          <div className="w-1 h-2 bg-sage-400 rounded-full" />
         </motion.div>
       </motion.div>
     </section>

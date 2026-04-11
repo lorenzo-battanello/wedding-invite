@@ -2,7 +2,7 @@ import { useState, useRef } from 'react'
 import { motion, AnimatePresence, useInView } from 'framer-motion'
 
 const inputClass =
-  'w-full border border-rose-200 rounded-xl px-4 py-3 font-sans text-gray-700 bg-white outline-none focus:ring-2 focus:ring-rose-300 focus:border-rose-300 transition-all placeholder-rose-200'
+  'w-full border border-sage-200 rounded-xl px-4 py-3 font-sans text-gray-700 bg-white outline-none focus:ring-2 focus:ring-sage-300 focus:border-sage-300 transition-all placeholder-sage-200'
 
 export default function RSVP() {
   const [sent, setSent] = useState(false)
@@ -34,7 +34,7 @@ export default function RSVP() {
   }
 
   return (
-    <section id="rsvp" className="py-28 px-6 bg-rose-50/60">
+    <section id="rsvp" className="py-28 px-6 bg-sage-50/60">
       <motion.div
         ref={titleRef}
         initial={{ opacity: 0, y: 30 }}
@@ -42,9 +42,9 @@ export default function RSVP() {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <p className="font-sans text-rose-400 tracking-[0.4em] uppercase text-xs mb-3">Fateci sapere</p>
-        <h2 className="font-serif text-4xl md:text-5xl text-rose-800">Conferma la Presenza</h2>
-        <div className="w-16 h-px bg-rose-300 mx-auto mt-4" />
+        <p className="font-sans text-sage-400 tracking-[0.4em] uppercase text-xs mb-3">Fateci sapere</p>
+        <h2 className="font-serif text-4xl md:text-5xl text-sage-800">Conferma la Presenza</h2>
+        <div className="w-16 h-px bg-sage-300 mx-auto mt-4" />
         <p className="font-sans text-gray-500 mt-4 text-sm">
           Gradita conferma entro il <strong>30 Luglio 2026</strong>.
         </p>
@@ -67,7 +67,7 @@ export default function RSVP() {
             <input type="hidden" name="form-name" value="rsvp" />
             {/* Name */}
             <div>
-              <label className="block font-sans text-rose-700 text-xs tracking-widest uppercase mb-1">
+              <label className="block font-sans text-sage-700 text-xs tracking-widest uppercase mb-1">
                 Nome e Cognome *
               </label>
               <input
@@ -82,7 +82,7 @@ export default function RSVP() {
 
             {/* Email */}
             <div>
-              <label className="block font-sans text-rose-700 text-xs tracking-widest uppercase mb-1">
+              <label className="block font-sans text-sage-700 text-xs tracking-widest uppercase mb-1">
                 Email *
               </label>
               <input
@@ -98,7 +98,7 @@ export default function RSVP() {
 
             {/* Attendance */}
             <div>
-              <label className="block font-sans text-rose-700 text-xs tracking-widest uppercase mb-1">
+              <label className="block font-sans text-sage-700 text-xs tracking-widest uppercase mb-1">
                 Presenza *
               </label>
               <select
@@ -114,7 +114,7 @@ export default function RSVP() {
 
             {/* Guests */}
             <div>
-              <label className="block font-sans text-rose-700 text-xs tracking-widest uppercase mb-1">
+              <label className="block font-sans text-sage-700 text-xs tracking-widest uppercase mb-1">
                 Numero di Persone
               </label>
               <select
@@ -131,7 +131,7 @@ export default function RSVP() {
 
             {/* Notes */}
             <div>
-              <label className="block font-sans text-rose-700 text-xs tracking-widest uppercase mb-1">
+              <label className="block font-sans text-sage-700 text-xs tracking-widest uppercase mb-1">
                 Note sui partecipanti e/o Allergie Alimentari
               </label>
               <textarea
@@ -155,8 +155,8 @@ export default function RSVP() {
                   className="sr-only"
                 />
                 <motion.div
-                  animate={{ backgroundColor: form.vegetariano ? '#e11d48' : '#fff' }}
-                  className="w-5 h-5 border-2 border-rose-300 rounded flex items-center justify-center"
+                  animate={{ backgroundColor: form.vegetariano ? '#4a7542' : '#fff' }}
+                  className="w-5 h-5 border-2 border-sage-300 rounded flex items-center justify-center"
                 >
                   {form.vegetariano && (
                     <motion.svg
@@ -172,7 +172,7 @@ export default function RSVP() {
                   )}
                 </motion.div>
               </div>
-              <span className="font-sans text-gray-600 text-sm group-hover:text-rose-600 transition-colors">
+              <span className="font-sans text-gray-600 text-sm group-hover:text-sage-600 transition-colors">
                 Dieta vegetariana/vegana 🥗
               </span>
             </label>
@@ -180,10 +180,10 @@ export default function RSVP() {
             {/* Submit */}
             <motion.button
               type="submit"
-              whileHover={{ scale: 1.02, backgroundColor: '#9f1239' }}
+              whileHover={{ scale: 1.02, backgroundColor: '#2d4a28' }}
               whileTap={{ scale: 0.97 }}
               transition={{ duration: 0.2 }}
-              className="w-full bg-rose-700 text-white py-4 rounded-xl font-sans tracking-[0.2em] uppercase text-sm font-semibold shadow-md mt-6"
+              className="w-full bg-sage-700 text-white py-4 rounded-xl font-sans tracking-[0.2em] uppercase text-sm font-semibold shadow-md mt-6"
             >
               Invia Conferma
             </motion.button>
@@ -203,11 +203,11 @@ export default function RSVP() {
             >
               🌸
             </motion.div>
-            <h3 className="font-serif text-3xl text-rose-800 mb-3">Grazie mille!</h3>
+            <h3 className="font-serif text-3xl text-sage-800 mb-3">Grazie mille!</h3>
             <p className="font-sans text-gray-500">
               Non vediamo l&apos;ora di festeggiare con te questo momento meraviglioso.
             </p>
-            <p className="font-serif italic text-rose-400 mt-4 text-lg">Con amore, Roberto &amp; Sabiana 💍</p>
+            <p className="font-serif italic text-sage-400 mt-4 text-lg">Con amore, Roberto &amp; Sabiana 💍</p>
           </motion.div>
         )}
       </AnimatePresence>

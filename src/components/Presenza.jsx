@@ -7,7 +7,7 @@ export default function Presenza() {
   const titleInView = useInView(titleRef, { once: true, margin: '-80px' })
 
   return (
-    <section id="presenza" className="py-28 px-6 bg-rose-50/50">
+    <section id="presenza" className="py-28 px-6 bg-sage-50/50">
       <motion.div
         ref={titleRef}
         initial={{ opacity: 0, y: 30 }}
@@ -15,20 +15,20 @@ export default function Presenza() {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <p className="font-sans text-rose-400 tracking-[0.4em] uppercase text-xs mb-3">Fateci sapere</p>
-        <h2 className="font-serif text-4xl md:text-5xl text-rose-800">Conferma la Presenza</h2>
-        <div className="w-16 h-px bg-rose-300 mx-auto mt-4" />
+        <p className="font-sans text-sage-400 tracking-[0.4em] uppercase text-xs mb-3">Fateci sapere</p>
+        <h2 className="font-serif text-4xl md:text-5xl text-sage-800">Conferma la Presenza</h2>
+        <div className="w-16 h-px bg-sage-300 mx-auto mt-4" />
         <p className="font-sans text-gray-500 mt-4 text-sm">
           Gradita conferma entro il <strong>30 Luglio 2026</strong>.
         </p>
       </motion.div>
     <motion.div className="max-w-lg mx-auto space-y-4 mb-16">
-      <p className="font-serif text-3xl text-rose-800 mb-3 text-center">Roberto : 
+      <p className="font-serif text-3xl text-sage-800 mb-3 text-center">Roberto : 
       <span className="font-sans text-gray-500 text-center text-base ml-2">
         +39 393 547 3880
       </span>
       </p>
-      <p className="font-serif text-3xl text-rose-800 mb-3 text-center">Sabiana : 
+      <p className="font-serif text-3xl text-sage-800 mb-3 text-center">Sabiana : 
       <span className="font-sans text-gray-500 text-center text-base ml-2 ">
         +39 392 754 4669
       </span>
@@ -44,11 +44,11 @@ export default function Presenza() {
             >
               🌸
             </motion.div>
-            <h3 className="font-serif text-3xl text-rose-800 mb-3 text-center">Grazie mille!</h3>
+            <h3 className="font-serif text-3xl text-sage-800 mb-3 text-center">Grazie mille!</h3>
             <p className="font-sans text-gray-500 text-center">
               Non vediamo l&apos;ora di festeggiare con te questo momento meraviglioso.
             </p>
-            <p className="font-serif italic text-rose-400 mt-4 text-lg text-center">Con amore, Roberto &amp; Sabiana</p>          
+            <p className="font-serif italic text-sage-400 mt-4 text-lg text-center">Con amore, Roberto &amp; Sabiana</p>          
         
       </AnimatePresence>
     </motion.div>
