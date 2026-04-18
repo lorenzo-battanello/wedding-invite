@@ -28,3 +28,9 @@ body {
 section {
   scroll-margin-top: 64px;
 }
+
+.wa {
+  max-width: 9rem;
+    min-width: 9rem;
+    border-radius: 7%;
+}

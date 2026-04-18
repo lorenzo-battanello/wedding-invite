@@ -27,11 +27,13 @@ export default function Presenza() {
       <span className="font-sans text-gray-500 text-center text-base ml-2">
         +39 393 547 3880
       </span>
+      <a href='https://wa.me/393935473880' className="ml-4 text-green-500 text-sm"><img className='wa mx-auto' src="../../public/logowhatsapp.png" alt="WhatsApp" /></a>
       </p>
       <p className="font-serif text-3xl text-sage-800 mb-3 text-center">Sabiana : 
       <span className="font-sans text-gray-500 text-center text-base ml-2 ">
         +39 392 754 4669
       </span>
+      <a href='https://wa.me/393927544669' className="ml-4 text-green-500 text-sm"><img className='wa mx-auto' src="../../public/logowhatsapp.png" alt="WhatsApp" /></a>
       </p>
     </motion.div>
     
